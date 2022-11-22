@@ -1,9 +1,7 @@
-Step 2: Gather Assets
-The design has a large background-image, so go find and download an image you want to use for that section. The one in the design can be found on unsplash.com, but feel free to select your own. Be sure to credit the creator of your image!
+  Photo by <a href="https://unsplash.com/@raddfilms?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Redd F</a> on <a href="https://unsplash.com/s/photos/japan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
 
-Pick an external font for the ‘logo’ section. We’ve used Norse Bold, but you can use any font you like.
-
-For the image-sidebar, we’ve used this Odin logo. Again, feel free to replace it.
+Photo by <a href="https://thenounproject.com/heyrabbit/">Hey Rabbit</a> on <a href="https://thenounproject.com/icon/hannya-mask-4933349/">The Noun Project</a>
 
 
 

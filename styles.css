@@ -4,3 +4,7 @@
     margin: 0;
     border: 1px solid white;
 }
+
+html {
+    background-color: darkgray;
+}
