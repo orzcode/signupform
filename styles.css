@@ -9,3 +9,12 @@ html {
     background-color: darkgray;
 }
 
+img {
+    display: inline;
+    height: 100vh;
+    width: 405px;
+}
+
+.test {
+    display: inline;
+}
