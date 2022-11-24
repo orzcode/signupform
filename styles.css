@@ -16,26 +16,31 @@ body {
 .rightPane {
     display: flex;
     flex-direction: column;
-    
-    
-    
+    flex: 1 1 60%;
+        
+}
+
+/* The 'basis' of 0 here (on all items) makes them take all available space */
+.right1, .right2, .right3 {
+    flex: 1 1 0;
 }
 
 .right1 {
-    height: 33%;
-    background-color: beige;
+    background-color: beige;  
 }
 
 .right2 {
-    height: 34%;
     background-color: azure;
 }
 
 .right3 {
-    height: 33%;
     background-color: beige;
 }
 
-.img {
-    flex: 0 1 02%;
+/* Max-width needed else the image stubbornly forces its own width */
+img {
+    max-width: 40vw;
+    height: 100%;
+    object-fit: cover;
+    flex: 1 1 40%;
 }
