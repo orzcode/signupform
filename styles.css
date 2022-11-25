@@ -59,20 +59,31 @@ body {
   max-width: 35vw;
 }
 
-.placard {
-    
-    position: absolute;
-    top: 30vh;
-    width: 35vw;
-    background-color: rgba(0,0,0,0.5);
-    color: white;
-    font-weight: 600;
-    font-size: 5rem;
-    text-align: center;
-    letter-spacing: 0.2rem;
+.hero:before {
+    backdrop-filter: blur(500px);
 }
 
-.logo {
-    
-    width: 25%;
+.placard {
+    display: flex;
+    place-content: center;
+    padding: 2rem;
+    position: relative;
+    top: 33%;
+    width: 35vw;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    font-family: Tillana;
+    font-weight: 600;
+    font-size: 4vw;    
+    padding: 0.5rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+
+.placard p {
+    align-self: center;
+}
+
+.logo {    
+    width: 4.5vw;
 }

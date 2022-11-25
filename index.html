@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto|Tillana">
     <title>Signup Form Project</title>
 </head>
 <body>
     <div class="hero">
-        <!-- <img src="heroCastle.png"> -->
-        <div class="placard">Ashina Corp. <embed type="image/svg+xml" src="logo.svg" class="logo"></div>
+        
+        <div class="placard">
+            <p>Ashina Corp.</p>
+            <embed type="image/svg+xml" alt="Ashina Corp. Logo" src="logo.svg" class="logo">
+        </div>
     </div>
     <div class="rightPane">
     <div class="right1">
@@ -21,12 +24,39 @@
     </div>
     <div class="right2">
         <h2>Join the Ashina Clan</h2>
-        <form id="form">
-            <label for="firstName">First Name</label><input type="text" name="firstName" id="firstName" minlength="1" placeholder="Sekiro">
-        </form>
+        <!-- Here begins the form -->
+        <!-- -------------------- -->
+    <form id="form" action="example.com/path" method="post">
+        <fieldset>
+        <!-- <legend>Thou name</legend> -->
+            <label for="firstName">First Name</label>
+            <!-- 'Label' is for the frontend, 'Name' is for the backend, 'For' links to 'id' -->
+            <input type="text" name="firstName" id="firstName" minlength="1" placeholder="Sekiro">
+            <label for="lastName">Last Name</label>            
+            <input type="text" name="lastName" id="lastName" minlength="1" placeholder="Wolf">
+        </fieldset>
+        <fieldset>
+        <!-- <legend>Contact details</legend> -->
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="number">Number</label>
+            <input type="number" name="number" id="number">
+        </fieldset>
+        <fieldset>
+        <!-- <legend>Password</legend> -->
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <label for="passwordConfirm">Confirm Password</label>
+            <input type="password" name="passwordConfirm" id="passwordConfirm">
+        </fieldset>
+    </form>
+        <!-- Here ends the form -->
+        <!-- -------------------- -->
     </div>
     <div class="right3">
+        <!-- Form buttons -->
         <button type="submit" form="form">Enlist</button>
+        <button type="reset" form="form">Reset</button>
         <br>
         <p>Part of Ashina Corp already? <a href="login.html">Ressurect</p>
     </div>
