@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-size: 62.5%; /* 1 rem = 10 px here, usually 1 rem = 16px */
     border: 1px solid white;
 }
 
@@ -30,7 +31,7 @@ body {
 }
 
 .right2 {
-    background-color: azure;
+    background-color: rgb(103, 141, 32);
 }
 
 .right3 {
@@ -78,6 +79,7 @@ body {
     padding: 0.5rem;
     text-align: center;
     letter-spacing: 0.1rem;
+    
 }
 
 .placard p {
