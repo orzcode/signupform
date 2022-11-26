@@ -29,28 +29,59 @@ body {
 .right1 {
     background-color: beige;
     flex: 1 1 0;
+    justify-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 5%;
+    padding-bottom: 5%;
 }
 
-.right2 {
-    background-color: rgb(103, 141, 32);
-    flex: 1 1 0;
+.right1 h2 {
+    width: 70%;
 }
 
 .right3 {
     background-color: beige;
     flex: 1 1 0;
+    justify-self: flex-end;
+    
 }
+
+.right3Content {
+    width: 60%;
+    position: relative;
+    left: 5%;
+    top: 5%;
+    font-size: 2rem;
+
+}
+
+.right2 {
+    background-color: rgb(103, 141, 32);
+    min-height: 40%;
+    /* flex: 1 1 0;
+    display: flex;
+    justify-self: stretch;
+    align-items:stretch;
+    justify-content: stretch; */ 
+    /*------ much easier without flex imo-------- */
+    }
+
+
 
 /* Form and Fieldset Flexbox layouts here */
 /* -------------------------------------- */
 form {
     display: flex;
     flex-flow: column nowrap;
-    margin-right: 40%;
-    gap: 4rem;
+    margin: 2% 30% 2% 5%;
+    
+    gap: 4rem;/*
     position: relative;
     left: 5%;
-    top: 5%;
+    top: 5%; */
+    
 }
 
 form h2 {
@@ -60,7 +91,8 @@ form h2 {
 fieldset {
     display: flex;
     flex-flow: row wrap; /*I don't mind if this wraps, to one column?*/
-    justify-content: space-between;    
+    justify-content: space-between;
+    gap: 4rem;
 }
 
 .inputGroup {
