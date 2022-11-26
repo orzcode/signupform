@@ -23,31 +23,44 @@
         <h2><strong>Hesitation is defeat</strong></h2>
     </div>
     <div class="right2">
-        <h2>Join the Ashina Clan</h2>
+        
         <!-- Here begins the form -->
         <!-- -------------------- -->
     <form id="form" action="example.com/path" method="post">
+        <h2>Join the Ashina Clan</h2>
         <fieldset>
         <!-- <legend>Thou name</legend> -->
+        <!-- 'Label' is for the frontend, 'Name' is for the backend, 'For' links to 'id' -->
+         <div class="inputGroup">
             <label for="firstName">First Name</label>
-            <!-- 'Label' is for the frontend, 'Name' is for the backend, 'For' links to 'id' -->
             <input type="text" name="firstName" id="firstName" minlength="1" placeholder="Sekiro">
+        </div>
+        <div class="inputGroup">
             <label for="lastName">Last Name</label>            
             <input type="text" name="lastName" id="lastName" minlength="1" placeholder="Wolf">
+         </div>
         </fieldset>
         <fieldset>
         <!-- <legend>Contact details</legend> -->
+        <div class="inputGroup">
             <label for="email">Email</label>
             <input type="email" name="email" id="email">
+        </div>
+        <div class="inputGroup">
             <label for="number">Number</label>
             <input type="number" name="number" id="number">
+        </div>
         </fieldset>
         <fieldset>
         <!-- <legend>Password</legend> -->
+        <div class="inputGroup">
             <label for="password">Password</label>
             <input type="password" name="password" id="password">
+        </div>
+        <div class="inputGroup">
             <label for="passwordConfirm">Confirm Password</label>
             <input type="password" name="passwordConfirm" id="passwordConfirm">
+        </div>
         </fieldset>
     </form>
         <!-- Here ends the form -->
