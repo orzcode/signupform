@@ -27,7 +27,8 @@ body {
 
 /* The 'basis' of 0 here (on all items) makes them take all available space */
 .right1 {
-    background-color: beige;
+    
+    background: linear-gradient(45deg, rgba(247, 235, 230) 0%, rgba(164, 126, 107) 100%);
     flex: 1 1 0;
     justify-self: flex-start;
     display: flex;
@@ -42,7 +43,7 @@ body {
 }
 
 .right3 {
-    background-color: beige;
+    background: linear-gradient(135deg, rgb(247, 235, 230) 0%, rgb(164, 126, 107) 100%);
     flex: 1 1 0;
     justify-self: flex-end;
     
