@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* border: 1px solid white; */
+    caret-color: transparent;
 }
 
 a {
@@ -61,7 +61,7 @@ body {
     width: 60%;
     
     padding-left: 5%;
-    padding-top: 5%;
+    
     font-size: clamp(2rem, 2.6vw, 2.8rem);
 
 }
@@ -104,7 +104,8 @@ fieldset {
     display: flex;
     flex-flow: row wrap; /*I don't mind if this wraps, to one column?*/
     justify-content: space-between;
-    gap: 4rem;
+    gap: 2rem;
+    width: 80%;
     /* border: none; */
 }
 
@@ -116,18 +117,62 @@ fieldset {
     width: 30%;
 }
 
-input[type=text], input[type=email], input[type=tel], input[type=password] {
-    padding: 0.5rem;
-    background-image: linear-gradient(90deg, white 60%, #2c3e50 100%);
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    transition: background-image 1s;
+label {
+    font-size: 2rem;
 }
 
-input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=password]:focus {
-    background-image: white;
+input[type=text], input[type=email], input[type=tel], input[type=password] {
+    padding: 0.8rem;
+    background-color: #bdc3c7;
+    border: none;
+    border-radius: 5px;
+    outline: none;    
+    
+    transition: background-color 0.5s;
+    caret-color: black;
+    box-shadow:2px 2px 4px 1px #00000042;
+    font-size: 1.6rem;
 }
+
+input[type=text]:hover, input[type=email]:hover, input[type=tel]:hover, input[type=password]:hover {
+    background-color: white;
+}
+
+input[type=text]:valid, input[type=email]:valid, input[type=tel]:valid, input[type=password]:valid {
+    border: none;
+}
+
+input[type=password]:invalid {
+    border: 1px solid red;
+}
+
+
+button {
+    background-color: #2c3e50;
+    font-size: 2.5rem;
+    min-width: max-content;
+    letter-spacing: 0.1rem;
+    color: white;
+    border-radius: 8px;
+    padding: 1rem 3rem;
+    width: 20%;
+    margin: 4% 0% 4% 0%;
+    box-shadow:2px 2px 4px 1px #00000042;
+    transition: box-shadow 0.1s;
+}
+
+button:nth-of-type(1){
+    margin-right:5rem;
+}
+
+button:hover {
+    box-shadow:4px 4px 2px 2px #00000042;
+}
+
+button:active {
+    transform: translateY(4px);
+}
+
 /* -------------------------------------- */
 /* Form and Fieldset Flexbox layouts here */
 
