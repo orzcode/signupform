@@ -104,15 +104,17 @@ fieldset {
     display: flex;
     flex-flow: row wrap; /*I don't mind if this wraps, to one column?*/
     justify-content: space-between;
-    gap: 2rem;    
+        
     min-width: fit-content;
     border: none;
+    flex: 1 1 1;
+
 }
 
 .inputGroup {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+   
     margin: 5px;
     width: 30%;
 }
@@ -191,10 +193,9 @@ button:active {
 
 .credit {
     color: white;
-    position: absolute;
+    position: relative;
     display: inline;
-    bottom: 2%;
-    left: 2%;
+    top: 73%;
 }
 
 .placard {
